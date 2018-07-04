@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		93098D4120ECF06500435CDE /* LaneNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93098D4020ECF06500435CDE /* LaneNode.swift */; };
+		93098D4320ECF52500435CDE /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93098D4220ECF52500435CDE /* Utils.swift */; };
 		93FCF33720EA485700C60F04 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FCF33620EA485700C60F04 /* AppDelegate.swift */; };
 		93FCF33920EA485700C60F04 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 93FCF33820EA485700C60F04 /* art.scnassets */; };
 		93FCF33B20EA485700C60F04 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FCF33A20EA485700C60F04 /* GameViewController.swift */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		93098D4020ECF06500435CDE /* LaneNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaneNode.swift; sourceTree = "<group>"; };
+		93098D4220ECF52500435CDE /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		93FCF33320EA485700C60F04 /* CrazyRoad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CrazyRoad.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93FCF33620EA485700C60F04 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		93FCF33820EA485700C60F04 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
@@ -63,6 +67,8 @@
 				93FCF33F20EA485A00C60F04 /* Assets.xcassets */,
 				93FCF34120EA485A00C60F04 /* LaunchScreen.storyboard */,
 				93FCF34420EA485A00C60F04 /* Info.plist */,
+				93098D4020ECF06500435CDE /* LaneNode.swift */,
+				93098D4220ECF52500435CDE /* Utils.swift */,
 			);
 			path = CrazyRoad;
 			sourceTree = "<group>";
@@ -139,8 +145,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93098D4120ECF06500435CDE /* LaneNode.swift in Sources */,
 				93FCF33B20EA485700C60F04 /* GameViewController.swift in Sources */,
 				93FCF33720EA485700C60F04 /* AppDelegate.swift in Sources */,
+				93098D4320ECF52500435CDE /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
