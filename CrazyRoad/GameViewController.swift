@@ -109,16 +109,17 @@ class GameViewController: UIViewController {
     }
     
     func setupGestures() {
+        
         let swipeUp = UISwipeGestureRecognizer(target: self, action: #selector(handleSwipe))
         swipeUp.direction = .up
         sceneView.addGestureRecognizer(swipeUp)
         
         let swipeRight = UISwipeGestureRecognizer(target: self, action: #selector(handleSwipe))
-        swipeUp.direction = .right
+        swipeRight.direction = .right
         sceneView.addGestureRecognizer(swipeRight)
         
         let swipeLeft = UISwipeGestureRecognizer(target: self, action: #selector(handleSwipe))
-        swipeUp.direction = .left
+        swipeLeft.direction = .left
         sceneView.addGestureRecognizer(swipeLeft)
     }
     
