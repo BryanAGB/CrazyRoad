@@ -23,6 +23,8 @@ var laneCount = 0
 var jumpForwardAction: SCNAction?
 var jumpRightAction: SCNAction?
 var jumpLeftAction: SCNAction?
+var driveRightAction: SCNAction?
+var driveLeftAction: SCNAction?
 
 
 class GameViewController: UIViewController {
@@ -36,6 +38,7 @@ class GameViewController: UIViewController {
         setupLight()
         setupGestures()
         setupActions()
+        setupTraffic()
     }
     
     func setupScene() {
@@ -137,6 +140,26 @@ class GameViewController: UIViewController {
         jumpForwardAction = SCNAction.group([turnForwardAction, jumpAction, moveForwardAction])
         jumpRightAction = SCNAction.group([turnRightAction, jumpAction, moveRightAction])
         jumpLeftAction = SCNAction.group([turnLeftAction, jumpAction, moveLeftAction])
+        
+        driveRightAction = SCNAction.repeatForever(SCNAction.moveBy(x: 2.0, y: 0, z: 0, duration: 1))
+        driveLeftAction = SCNAction.repeatForever(SCNAction.moveBy(x: -2.0, y: 0, z: 0, duration: 1))
+    }
+    
+    func addActions(for trafficNode: TrafficNode) {
+        
+        guard let driveAction = trafficNode.directionRight ? driveRightAction : driveLeftAction else {return}
+        for vehicle in trafficNode.childNodes {
+            vehicle.runAction(driveAction)
+        }
+        
+    }
+    
+    func setupTraffic() {
+        for lane in lanes {
+            if let trafficNode = lane.trafficNode {
+                addActions(for: trafficNode)
+            }
+        }
     }
     
     func jumpForward() {
@@ -184,6 +207,10 @@ class GameViewController: UIViewController {
         laneCount += 1
         lanes.append(lane)
         mapNode.addChildNode(lane)
+        
+        if let trafficNode = lane.trafficNode {
+            addActions(for: trafficNode)
+        }
     }
     
 }
