@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		93098D4120ECF06500435CDE /* LaneNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93098D4020ECF06500435CDE /* LaneNode.swift */; };
 		93098D4320ECF52500435CDE /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93098D4220ECF52500435CDE /* Utils.swift */; };
+		93CCF90520F4D45B009EFF64 /* CollisionNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CCF90420F4D45B009EFF64 /* CollisionNode.swift */; };
 		93FCF33720EA485700C60F04 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FCF33620EA485700C60F04 /* AppDelegate.swift */; };
 		93FCF33920EA485700C60F04 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 93FCF33820EA485700C60F04 /* art.scnassets */; };
 		93FCF33B20EA485700C60F04 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FCF33A20EA485700C60F04 /* GameViewController.swift */; };
@@ -20,6 +21,7 @@
 /* Begin PBXFileReference section */
 		93098D4020ECF06500435CDE /* LaneNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaneNode.swift; sourceTree = "<group>"; };
 		93098D4220ECF52500435CDE /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		93CCF90420F4D45B009EFF64 /* CollisionNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollisionNode.swift; sourceTree = "<group>"; };
 		93FCF33320EA485700C60F04 /* CrazyRoad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CrazyRoad.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93FCF33620EA485700C60F04 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		93FCF33820EA485700C60F04 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 				93FCF34420EA485A00C60F04 /* Info.plist */,
 				93098D4020ECF06500435CDE /* LaneNode.swift */,
 				93098D4220ECF52500435CDE /* Utils.swift */,
+				93CCF90420F4D45B009EFF64 /* CollisionNode.swift */,
 			);
 			path = CrazyRoad;
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 				93098D4120ECF06500435CDE /* LaneNode.swift in Sources */,
 				93FCF33B20EA485700C60F04 /* GameViewController.swift in Sources */,
 				93FCF33720EA485700C60F04 /* AppDelegate.swift in Sources */,
+				93CCF90520F4D45B009EFF64 /* CollisionNode.swift in Sources */,
 				93098D4320ECF52500435CDE /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
