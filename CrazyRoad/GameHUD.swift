@@ -46,7 +46,7 @@ class GameHUD: SKScene {
         guard let pointsLabel = pointsLabel else { return }
         pointsLabel.text = "0"
         pointsLabel.fontSize = 40.0
-        pointsLabel.position = CGPoint(x: frame.minX + frame.size.width, y: frame.maxY - pointsLabel.frame.size.height*2)
+        pointsLabel.position = CGPoint(x: frame.minX + pointsLabel.frame.size.width, y: frame.maxY - pointsLabel.frame.size.height * 2)
         addChild(pointsLabel)
     }
     
